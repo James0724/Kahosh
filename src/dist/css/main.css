@@ -1,0 +1,70 @@
+body {
+  color: #212529;
+  font-family: "Inter", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+.hero {
+  padding-top: 120px;
+  margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+}
+.hero__img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+.hero__text {
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+  margin: 0 0 40px;
+}
+.hero__text h3 {
+  font-weight: 400;
+}
+.hero__text span {
+  color: #401b93;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.hero__searchbox {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.hero__searchbox button {
+  margin-left: 30px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #401b93;
+  border: 2px solid #401b93;
+  color: #fff;
+}
+.hero__searchbox input {
+  padding: 15px 30px;
+  color: #313030;
+  border: 2px solid #401b93;
+  border-radius: 5px;
+}
+.hero__social-icons a {
+  padding: 5px;
+  text-decoration: none;
+}
+.hero__social-icons a svg {
+  font-size: 30px;
+  line-height: 1em;
+}
+.hero__social-icons a svg:hover {
+  color: #4974a5;
+}/*# sourceMappingURL=main.css.map */
