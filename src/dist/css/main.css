@@ -1,13 +1,105 @@
 body {
   color: #212529;
   font-family: "Inter", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: calc(1.35rem + 1.2vw);
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+h3 {
+  font-weight: 500;
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+p {
   font-size: 1rem;
 }
 
-h1,
-h2,
-h3 {
+.container {
+  width: 100%;
+  background: #f3f2f0;
+  margin: 100px 0 100px 0;
+  text-align: center;
+  padding: 40px 0 40px 0;
+  line-height: 0em;
+}
+.container h2 {
   font-weight: 400;
+  font-family: "Poppins", san-serif;
+  color: #0ba1af;
+  font-size: calc(1.3125rem + 0.75vw);
+}
+@media (min-width: 1200px) {
+  .container h2 {
+    font-size: 1.875rem;
+  }
+}
+.container h2 span {
+  text-transform: uppercase;
+  font-size: calc(1.35rem + 1.2vw);
+}
+@media (min-width: 1200px) {
+  .container h2 span {
+    font-size: 2.25rem;
+  }
+}
+.container h1 {
+  font-family: "Poppins", san-serif;
+  color: #0ba1af;
+  font-weight: 900;
+  font-size: calc(1.3125rem + 0.75vw);
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+}
+@media (min-width: 1200px) {
+  .container h1 {
+    font-size: 1.875rem;
+  }
+}
+.container h1 span {
+  text-transform: uppercase;
+  font-size: calc(1.35rem + 1.2vw);
+}
+@media (min-width: 1200px) {
+  .container h1 span {
+    font-size: 2.25rem;
+  }
+}
+.container h1:after {
+  content: "";
+  width: 25%;
+  border-bottom: solid 5px #fb541a;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero {
@@ -38,6 +130,7 @@ h3 {
   color: #401b93;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 .hero__searchbox {
   padding-top: 10px;

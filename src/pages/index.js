@@ -14,11 +14,11 @@ const index = () => {
 						<StaticImage src="../images/Logotext.png" alt="kahoro" />
 					</div>
 					<div className="hero__text">
-						<h3>
+						<h4>
 							The Future of the web is collaborative and creative, therefore it
 							must be sequre, inclusive and accesible <br />
 							<span>#THE FUTURE IS NOW</span>
-						</h3>
+						</h4>
 					</div>
 					<div className="hero__searchbox">
 						<input type="text" placeholder="Logo, Website, branding ..." />
@@ -35,6 +35,16 @@ const index = () => {
 							<Icon icon="simple-icons:linkedin" />
 						</a>
 					</div>
+				</div>
+				<div className="container">
+					<h2>
+						The <span>goal</span> isn’t to build a website.
+					</h2>
+					<h1>
+						The <span>goal</span> is to <span>build</span> your{' '}
+						<span>business</span>.
+					</h1>
+					<div className="title-divider"></div>
 				</div>
 			</section>
 		</main>
