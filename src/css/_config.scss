@@ -1,4 +1,38 @@
-$primary-color: #401b93;
-$secondary-color: #fb541a;
-$teriary-color: #0ba1af;
-$bright-color: #fff;
+$dark-navy: #020c1b;
+$navy: #0a192f;
+$light-navy: #112240;
+$lightest-navy: #233554;
+$navy-shadow: rgba(2, 12, 27, 0.7);
+$dark-slate: #495670;
+$slate: #8892b0;
+$light-slate: #a8b2d1;
+$lightest-slate: #ccd6f6;
+$white: #e6f1ff;
+$green: #64ffda;
+$green-tint: rgba(100, 255, 218, 0.1);
+$pink: #f57dff;
+$blue: #57cbff;
+
+@mixin transition-ease {
+	transition: all 0.5s ease-in-out;
+}
+@mixin media-sm {
+	@media screen and (min-width: 320px) {
+		@content;
+	}
+}
+@mixin media-md {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+@mixin media-lg {
+	@media screen and (min-width: 992px) {
+		@content;
+	}
+}
+@mixin media-xl {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}

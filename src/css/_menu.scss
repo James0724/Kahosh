@@ -1,0 +1,182 @@
+@import "../../node_modules/rfs/sass.sass";
+
+.navbar {
+	width: 100%;
+	z-index: 20;
+	top: 0;
+	position: fixed;
+	@include transition-ease;
+	backdrop-filter: blur(10px);
+	background: $navy;
+	background-color: rgba(10, 25, 47, 0.85);
+	box-shadow: 0 10px 30px -10px $navy-shadow;
+
+	&.active {
+		//box-shadow: -10px 0px 30px -15px $navy-shadow;
+		top: 0;
+	}
+}
+.menu-btn {
+	position: fixed;
+	right: 1.5rem;
+	top: 1.5rem;
+	z-index: 10;
+	height: 20px;
+	width: 28px;
+	cursor: pointer;
+	@include transition-ease;
+
+	&__burger {
+		position: absolute;
+		right: 0;
+		top: 0.5rem;
+		width: 28px;
+		height: 3px;
+		background: $green;
+		@include transition-ease;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -8px;
+			width: 28px;
+			height: 3px;
+			background: $green;
+			@include transition-ease;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 8px;
+			width: 20px;
+			height: 3px;
+			background: $green;
+			@include transition-ease;
+		}
+
+		&.open {
+			transform: rotate(720deg);
+			background: transparent;
+
+			&::before {
+				transform: rotate(45deg) translate(5px, 8px);
+			}
+
+			&::after {
+				width: 28px;
+				transform: rotate(-45deg) translate(3px, -7px);
+			}
+		}
+	}
+}
+.logo {
+	position: fixed;
+	left: 1.5rem;
+	top: 1rem;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.nav {
+	position: fixed;
+	width: 70%;
+	top: 0;
+	right: 0;
+	z-index: 9;
+	visibility: hidden;
+
+	&.open {
+		visibility: visible;
+	}
+
+	.menu-nav {
+		counter-reset: item;
+		height: 100vh;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		background: $navy;
+		list-style-type: none;
+		padding: 0 10px;
+		margin: 0;
+		box-shadow: -10px 0px 30px -15px $navy-shadow;
+		transform: translateY(-100%);
+		@include transition-ease;
+		&.open {
+			transform: translateY(0);
+		}
+
+		&__item {
+			margin: 10px 0 10px 0;
+			transform: translateX(100vw);
+			@include transition-ease;
+
+			&.open {
+				transform: translateX(0);
+			}
+
+			&.active > a {
+				color: $green;
+			}
+		}
+
+		& button {
+			color: $green;
+			background-color: transparent;
+			border: 2px solid $green;
+			border-radius: 5px;
+			padding: 18px 50px;
+			margin: 10% auto 0px;
+			font-family: "Roboto Mono", monospace;
+			text-decoration: none;
+			line-height: 1;
+			width: max-content;
+			//@include font-size(18px);
+			font-weight: 300;
+			letter-spacing: 2px;
+			transform: translateX(100vw);
+			@include transition-ease;
+			cursor: pointer;
+			&:hover {
+				background: $light-navy;
+			}
+			&.open {
+				transform: translateX(0);
+			}
+		}
+
+		&__link {
+			color: $white;
+			font-family: "Roboto Mono", monospace;
+			text-decoration: none;
+			counter-increment: item;
+			padding: 20px 0;
+			@include font-size(18px);
+			@include transition-ease;
+
+			&:hover {
+				color: $green;
+			}
+			&::before {
+				content: "0" counter(item) ".";
+				margin-bottom: 5px;
+				color: $green;
+				@include font-size(16px);
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+}
+.nav-link {
+	text-decoration: none;
+}
+
+@for $i from 1 through 4 {
+	.menu-nav__item:nth-child(#{$i}) {
+		transition-delay: ($i * 0.1s) + 0.15s;
+	}
+}

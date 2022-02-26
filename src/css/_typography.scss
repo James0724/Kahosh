@@ -1,0 +1,33 @@
+@font-face {
+	font-family: "SF Mono";
+	font-style: normal;
+	font-weight: normal;
+	src: local("SF Mono Regular"), url("/src/fonts/SF-Mono.ttf") format("ttf");
+}
+@font-face {
+	font-family: "SF Mono Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: local("SF Mono Regular"),
+		url("/src/fonts/SF-Mono-Regular.ttf") format("ttf");
+}
+@font-face {
+	font-family: "SF Mono Light";
+	font-style: normal;
+	font-weight: normal;
+	src: local("SF Mono Light"), url("/src/fonts/SF-Mono-Light.ttf") format("ttf");
+}
+@font-face {
+	font-family: "SF Mono Medium";
+	font-style: normal;
+	font-weight: normal;
+	src: local("SF Mono Medium"),
+		url("/src/fonts/SF-Mono-Medium.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "SF Mono Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: local("SF Mono Bold"), url("/src/fonts/SF-Mono-Bold.ttf") format("ttf");
+}

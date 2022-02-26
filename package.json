@@ -16,17 +16,16 @@
   },
   "dependencies": {
     "gatsby": "^4.5.2",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-image": "^2.6.0",
-    "gatsby-plugin-sharp": "^4.6.0",
-    "gatsby-source-filesystem": "^4.6.0",
-    "gatsby-transformer-sharp": "^4.6.0",
+    "gatsby-plugin-image": "^2.8.0",
+    "gatsby-plugin-sharp": "^4.8.0",
+    "gatsby-source-contentful": "^7.6.0",
+    "gatsby-source-filesystem": "^4.8.0",
+    "gatsby-transformer-sharp": "^4.8.0",
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rfs": "^9.0.6"
-  },
-  "devDependencies": {
-    "@iconify/react": "^3.1.3"
   }
 }

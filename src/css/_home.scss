@@ -1,0 +1,366 @@
+.main {
+	padding: 0 50px;
+}
+.hero-section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+	min-height: 100vh;
+	padding: 0;
+	margin: 50px 0;
+	& .intro {
+		& h3 {
+			color: $green;
+			font-family: "Roboto Mono", monospace;
+			font-weight: 300;
+			@include font-size(16px);
+		}
+	}
+	& .name {
+		& h1 {
+			font-family: "Poppins", sans-serif;
+			font-weight: 700;
+			color: $lightest-slate;
+			@include font-size(62px);
+		}
+	}
+	& .intro-text {
+		&__title {
+			& h1 {
+				font-family: "Poppins", sans-serif;
+			}
+		}
+		&__sub-title {
+			& h2 {
+				font-family: "Roboto Mono", monospace;
+				color: $green;
+				@include font-size(20px);
+			}
+		}
+		&__message {
+			& p {
+				font-family: "Roboto Mono", monospace;
+			}
+		}
+	}
+}
+.about-section {
+	.numbered-heading {
+		&::before {
+			counter-increment: section 1;
+			content: "0" counter(section) ".";
+		}
+	}
+
+	& .about__text {
+		& p {
+			font-family: "Roboto Mono", monospace;
+			& a {
+				display: inline-block;
+				text-decoration: none;
+				text-decoration-skip-ink: auto;
+				position: relative;
+				@include transition-ease;
+				color: $green;
+			}
+		}
+		& .skills-list {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(200px, 200px));
+			gap: 0px 10px;
+			padding: 0px;
+			margin: 20px 0px 0px;
+			overflow: hidden;
+			list-style: none;
+			& li {
+				position: relative;
+				margin-bottom: 10px;
+				padding-left: 20px;
+				font-family: "Roboto Mono", monospace;
+				@include font-size(14px);
+				&::before {
+					content: "▹";
+					position: absolute;
+					left: 5px;
+					color: $green;
+					font-size: 12px;
+					line-height: 12px;
+				}
+			}
+		}
+		& .about__pic {
+			margin: 50px auto 0px;
+			width: 70%;
+			& .wrapper {
+				box-shadow: 0 10px 30px -15px $navy-shadow;
+				@include transition-ease;
+				display: block;
+				position: relative;
+				width: 100%;
+				border-radius: 5px;
+				background-color: $green;
+				& ::after {
+					content: "";
+					border: 2px solid $green;
+					top: 20px;
+					left: 20px;
+					z-index: -1;
+					display: block;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					border-radius: var(--border-radius);
+					transition: var(--transition);
+				}
+			}
+		}
+	}
+}
+
+//****************************PROJECT SECTION*******************************************
+
+.project-section {
+	.numbered-heading {
+		&::before {
+			counter-increment: section 2;
+			content: "0" counter(section) ".";
+		}
+	}
+	& p {
+		font-family: "Roboto Mono", monospace;
+		& a {
+			display: inline-block;
+			text-decoration: none;
+			text-decoration-skip-ink: auto;
+			position: relative;
+			@include transition-ease;
+			color: $green;
+		}
+	}
+}
+.project-grid {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.project {
+	position: relative;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(12, 1fr);
+	align-items: center;
+
+	& .project-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		padding: 0 40px 30px;
+		z-index: 5;
+		position: relative;
+
+		& .project-overline {
+			margin: 10px 0px;
+			color: $green;
+			font-family: "Roboto Mono", monospace;
+			@include font-size(14px);
+			font-weight: 300;
+		}
+		& .project-title {
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+		& .project-description {
+			background-color: transparent;
+			box-shadow: none;
+		}
+		.project-tech-list {
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			margin: 10px 0px;
+			padding: 0px;
+			list-style: none;
+
+			& li {
+				margin: 0px 20px 5px 0px;
+				color: $light-slate;
+				font-family: "Roboto Mono", monospace;
+				@include font-size(14px);
+				white-space: nowrap;
+			}
+		}
+		& .project-links {
+			display: flex;
+			align-items: center;
+			position: relative;
+			margin-top: 10px;
+			margin-left: -10px;
+
+			& a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 10px;
+				& svg {
+					width: 20px;
+					height: 20px;
+					color: $lightest-slate;
+				}
+			}
+		}
+	}
+	& .project-image {
+		position: relative;
+		z-index: 1;
+		box-shadow: 0 10px 30px -15px var $navy-shadow;
+		@include transition-ease;
+
+		& a {
+			width: 100%;
+			height: 100%;
+			background-color: $green;
+			vertical-align: middle;
+			& ::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				inset: 0px;
+				z-index: 3;
+				@include transition-ease;
+				background-color: $navy;
+				mix-blend-mode: screen;
+			}
+		}
+	}
+}
+
+//*****************HEADING*******************888
+.numbered-heading {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin: 10px 0px 40px;
+	width: 100%;
+	white-space: nowrap;
+	color: $lightest-slate;
+	@include font-size(18px);
+	&::before {
+		bottom: 4px;
+		counter-increment: section 1;
+		content: "0" counter(section) ".";
+		margin-right: 10px;
+		color: $green;
+		font-family: "Roboto Mono", monospace;
+		font-weight: 300;
+		@include font-size(16px);
+	}
+	&::after {
+		content: "";
+		display: block;
+		position: relative;
+		width: 300px;
+		height: 1px;
+		margin-left: 20px;
+		background-color: $lightest-navy;
+	}
+}
+//*****************************CONTACT SECTION*****************************
+.contact-section {
+	text-align: center;
+	& .numbered-heading {
+		&::before {
+			counter-increment: section 3;
+			content: "0" counter(section) ".";
+		}
+	}
+	& .title {
+		color: $lightest-slate;
+		@include font-size(36px);
+	}
+	& p {
+		font-family: "Roboto Mono", monospace;
+		@include font-size(14px);
+	}
+	& button {
+		a {
+			text-decoration: none;
+			color: $green;
+		}
+	}
+}
+.orientation {
+	position: fixed;
+	bottom: 0;
+	width: 40px;
+	position: fixed;
+
+	z-index: 10;
+
+	.social-items {
+		text-decoration: none;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px;
+		padding: 0px;
+		li {
+			& a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 10px;
+				& svg {
+					width: 20px;
+					height: 20px;
+					color: $lightest-slate;
+				}
+			}
+		}
+		&::after {
+			content: "";
+			display: block;
+			width: 1px;
+			height: 90px;
+			margin: 0px auto;
+			background-color: $light-slate;
+		}
+	}
+}
+.left {
+	left: 40px;
+	right: auto;
+}
+.right {
+	right: 40px;
+	left: auto;
+	.email {
+		margin: 10px auto;
+		padding: 5px;
+		line-height: 15px;
+		letter-spacing: 0.1em;
+		writing-mode: vertical-rl;
+		a {
+			text-decoration: none;
+			color: $light-slate;
+			font-family: "Roboto Mono", monospace;
+			@include font-size(12px);
+		}
+		& :hover {
+			color: $green;
+		}
+	}
+	&::after {
+		content: "";
+		display: block;
+		width: 1px;
+		height: 90px;
+		margin: 0px auto;
+		background-color: $light-slate;
+	}
+}
