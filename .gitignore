@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 node_modules/
 .cache/
 public
 .env
 .gitignore
+=======
+node_modules/
+.cache/
+public
+.env
+.gitignore
+>>>>>>> bce19e8dec41248929f622c1ef74608d73659a5c
