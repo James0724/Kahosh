@@ -32,18 +32,26 @@ const ProjectList = () => {
 	return (
 		<ul className="project-grid">
 			{project.map((project) => {
-				const {
-					id,
-					title,
-					projectDescription,
-					techlist,
-					featured,
-					links,
-					projectImage,
-				} = project;
+				const { id, title, projectDescription, techlist, links, projectImage } =
+					project;
 				console.log(techlist);
 				return (
 					<li className="project">
+						<div className="project-image">
+							<a
+								href={links}
+								aria-label="External Link"
+								class="external"
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								<GatsbyImage
+									image={projectImage.gatsbyImageData}
+									alt={projectImage.title}
+									className="project-image__background"
+								/>
+							</a>
+						</div>
 						<div class="project-content" key={id}>
 							<p class="project-overline">Featured Project</p>
 							<h3 class="project-title">
@@ -106,21 +114,6 @@ const ProjectList = () => {
 									</svg>
 								</a>
 							</div>
-						</div>
-						<div className="project-image">
-							<a
-								href={links}
-								aria-label="External Link"
-								class="external"
-								rel="noopener noreferrer"
-								target="_blank"
-							>
-								<GatsbyImage
-									image={projectImage.gatsbyImageData}
-									alt={projectImage.title}
-									className="project-image__background"
-								/>
-							</a>
 						</div>
 					</li>
 				);
