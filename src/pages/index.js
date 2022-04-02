@@ -244,7 +244,7 @@ const index = () => {
 				<ul class="social-items">
 					<li>
 						<a
-							href="https://github.com/bchiang7"
+							href="https://github.com/James0724"
 							aria-label="GitHub"
 							target="_blank"
 							rel="noreferrer"
@@ -267,7 +267,7 @@ const index = () => {
 					</li>
 					<li>
 						<a
-							href="https://www.instagram.com/bchiang7"
+							href="https://www.instagram.com/jameskahosh"
 							aria-label="Instagram"
 							target="_blank"
 							rel="noreferrer"
@@ -293,7 +293,7 @@ const index = () => {
 
 					<li>
 						<a
-							href="https://www.linkedin.com/in/bchiang7"
+							href="https://www.linkedin.com/in/james-kahoro-35781b145/"
 							aria-label="Linkedin"
 							target="_blank"
 							rel="noreferrer"
@@ -316,7 +316,7 @@ const index = () => {
 							</svg>
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a
 							href="https://codepen.io/bchiang7"
 							aria-label="Codepen"
@@ -342,7 +342,7 @@ const index = () => {
 								<line x1="12" y1="2" x2="12" y2="8.5"></line>
 							</svg>
 						</a>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 

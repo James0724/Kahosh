@@ -9,7 +9,7 @@ function Footer() {
 					<ul>
 						<li>
 							<a
-								href="https://github.com/bchiang7"
+								href="https://github.com/james0724"
 								aria-label="GitHub"
 								rel="noopener noreferrer"
 								target="_blank"
@@ -32,7 +32,7 @@ function Footer() {
 						</li>
 						<li>
 							<a
-								href="https://www.instagram.com/bchiang7"
+								href="https://www.instagram.com/jameskahosh"
 								aria-label="Instagram"
 								rel="noopener noreferrer"
 								target="_blank"
@@ -58,7 +58,7 @@ function Footer() {
 
 						<li>
 							<a
-								href="https://www.linkedin.com/in/bchiang7"
+								href="https://www.linkedin.com/in/james-kahoro-35781b145/"
 								aria-label="Linkedin"
 								rel="noopener noreferrer"
 								target="_blank"
@@ -81,7 +81,7 @@ function Footer() {
 								</svg>
 							</a>
 						</li>
-						<li>
+						{/* <li>
 							<a
 								href="https://codepen.io/bchiang7"
 								aria-label="Codepen"
@@ -107,12 +107,12 @@ function Footer() {
 									<line x1="12" y1="2" x2="12" y2="8.5"></line>
 								</svg>
 							</a>
-						</li>
+						</li> */}
 					</ul>
 				</div>
 				<div class="credits">
 					<a
-						href="https://github.com/bchiang7/v4"
+						href="https://github.com/james0724/kahosh"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
