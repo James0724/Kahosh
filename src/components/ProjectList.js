@@ -34,7 +34,6 @@ const ProjectList = () => {
 			{project.map((project) => {
 				const { id, title, projectDescription, techlist, links, projectImage } =
 					project;
-				console.log(techlist);
 				return (
 					<li className="project">
 						<div className="project-image">

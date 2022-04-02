@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ProjectList from "../components/ProjectList";
+import Allbloglist from "../components/Allbloglist";
 import "normalize.css";
 import "../dist/css/main.css";
 
@@ -226,6 +227,7 @@ const index = () => {
 						</a>
 					</button>
 				</section>
+				<Allbloglist />
 				{/* <div class="hero__social-icons">
 					<a href="#!">
 						<Icon icon="simple-icons:facebook" />
@@ -343,6 +345,7 @@ const index = () => {
 					</li>
 				</ul>
 			</div>
+
 			<div class="right orientation">
 				<div class="email">
 					<a href="mailto:brittany.chiang@gmail.com">jameskahoro07@gmail.com</a>
