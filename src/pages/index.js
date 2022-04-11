@@ -2,6 +2,9 @@ import React from "react";
 import Layout from "../components/Layout";
 import ProjectList from "../components/ProjectList";
 import Allbloglist from "../components/Allbloglist";
+import { StaticImage } from "gatsby-plugin-image";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+
 import "normalize.css";
 import "../dist/css/main.css";
 
@@ -38,61 +41,48 @@ const index = () => {
 							</p>
 						</div>
 					</div>
-					<div className="bio">
-						<button>Check out my story!</button>
-					</div>
+
+					<button>
+						<AnchorLink to="/#about" title="about">
+							Check out my story!
+						</AnchorLink>
+					</button>
 				</section>
 				<section id="about" className="about-section">
 					<h2 class="numbered-heading">About Me</h2>
-					<div class="about__text">
-						<p>
-							Hello! My name is James, I'm a web developer based in Kenya
-							passionate about bringing both the technical and visual aspects of
-							digital products to life. My interest in web development started
-							back in 2018 when I decided to start my own company of travel tour
-							and safaris. During that time I learned various way of creating a
-							website the experience and challenges taught me a lot about HTML
-							&amp; CSS!
-						</p>
-						<p>
-							Fast-forward to today, and I’ve had the privilege of working on
-							different projects{" "}
-							<a
-								href="https://us.mullenlowe.com/"
-								rel="noopener noreferrer"
-								target="_blank"
-							>
-								Netflix clone App
-							</a>
-							,{" "}
-							<a
-								href="https://starry.com/"
-								rel="noopener noreferrer"
-								target="_blank"
-							>
-								Cyber Cafe website
-							</a>
-							,{" "}
-							<a
-								href="https://www.apple.com/"
-								rel="noopener noreferrer"
-								target="_blank"
-							>
-								a resturant website
-							</a>
-							, and{" "}
-							<a
-								href="https://scout.camd.northeastern.edu/"
-								rel="noopener noreferrer"
-								target="_blank"
-							>
-								a design studio
-							</a>
-							. My main focus these days is building accessible, inclusive
-							products and digital experiences as a freelancer for a variety of
-							clients.
-						</p>
-						{/* <p>
+					<div className="about-container">
+						<div class="about__text">
+							<p>
+								Hello! My name is James, I'm a web developer based in Kenya
+								passionate about bringing both the technical and visual aspects
+								of digital products to life. My interest in web development
+								started back in 2018 when I decided to start my own company of
+								travel tour and safaris. During that time I learned various way
+								of creating a website the experience and challenges taught me a
+								lot about HTML &amp; CSS!
+							</p>
+							<p>
+								Fast-forward to today, and I’ve had the privilege of working on
+								different projects{" "}
+								<a
+									href="https://247cybercafe.netlify.app/"
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									Cyber Cafe website,
+								</a>
+								<a
+									href="https://vicboninteriors.netlify.app/"
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									vicbon interiors,
+								</a>
+								and much much more to come. My main focus these days is building
+								accessible, inclusive products and digital experiences as a
+								freelancer for a variety of clients.
+							</p>
+							{/* <p>
 							I also recently{" "}
 							<a
 								href="https://www.newline.co/courses/build-a-spotify-connected-app"
@@ -104,19 +94,28 @@ const index = () => {
 							that covers everything you need to build a web app with the
 							Spotify API using Node &amp; React.
 						</p> */}
-						<p>Here are a few technologies I’ve been working with recently:</p>
+							<p>
+								Here are a few technologies I’ve been working with recently:
+							</p>
 
-						<ul class="skills-list">
-							<li>JavaScript (ES6+)</li>
-							<li>TypeScript</li>
-							<li>React</li>
-							<li>Eleventy</li>
-							<li>Node.js</li>
-							<li>WordPress</li>
-						</ul>
-					</div>
-					<div className="about__pic">
-						<div className="wrapper"></div>
+							<ul class="skills-list">
+								<li>JavaScript (ES6+)</li>
+								<li>TypeScript</li>
+								<li>React</li>
+								<li>Eleventy</li>
+								<li>Node.js</li>
+								<li>WordPress</li>
+							</ul>
+						</div>
+						<div className="about__pic">
+							<div className="img_wrapper">
+								<StaticImage
+									src="../images/dev.png"
+									alt="me"
+									className="about_img"
+								/>
+							</div>
+						</div>
 					</div>
 				</section>
 				<section id="projects" className="project-section">
@@ -219,7 +218,7 @@ const index = () => {
 					<button>
 						<a
 							class="email-link"
-							href="mailto:brittany.chiang@gmail.com"
+							href="mailto:jameskahoro07@gmail.com"
 							rel="noopener noreferrer"
 							target="_blank"
 						>
@@ -348,7 +347,7 @@ const index = () => {
 
 			<div class="right orientation">
 				<div class="email">
-					<a href="mailto:brittany.chiang@gmail.com">jameskahoro07@gmail.com</a>
+					<a href="mailto:jameskahoro07@gmail.com">jameskahoro07@gmail.com</a>
 				</div>
 			</div>
 		</Layout>

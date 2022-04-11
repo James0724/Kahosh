@@ -12,6 +12,8 @@ const query = graphql`
 						layout: FULL_WIDTH
 						placeholder: BLURRED
 						resizingBehavior: SCALE
+						height: 120
+						width: 200
 					)
 				}
 				id
@@ -44,6 +46,7 @@ const ProjectList = () => {
 								rel="noopener noreferrer"
 								target="_blank"
 							>
+								{" "}
 								<GatsbyImage
 									image={projectImage.gatsbyImageData}
 									alt={projectImage.title}
@@ -54,7 +57,13 @@ const ProjectList = () => {
 						<div class="project-content" key={id}>
 							<p class="project-overline">Featured Project</p>
 							<h3 class="project-title">
-								<a href="!#" rel="noopener noreferrer" target="_blank">
+								<a
+									href={links}
+									aria-label="External Link"
+									class="external"
+									rel="noopener noreferrer"
+									target="_blank"
+								>
 									{title}
 								</a>
 							</h3>
@@ -68,7 +77,7 @@ const ProjectList = () => {
 							</ul>
 							<div class="project-links">
 								<a
-									href="https://github.com/bchiang7/halcyon-site"
+									href="https://github.com/james0724/vicbon"
 									aria-label="GitHub Link"
 									rel="noopener noreferrer"
 									target="_blank"
@@ -89,7 +98,7 @@ const ProjectList = () => {
 									</svg>
 								</a>
 								<a
-									href="https://halcyon-theme.netlify.com/"
+									href={links}
 									aria-label="External Link"
 									class="external"
 									rel="noopener noreferrer"

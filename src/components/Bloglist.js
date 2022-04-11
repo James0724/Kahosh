@@ -13,7 +13,7 @@ const Blog = ({ posts = [] }) => {
 					<Link key={id} to={`/${slug}`} className="blog-item">
 						<div class="post-list-image">
 							<GatsbyImage
-								className="grayscale"
+								className="post-image"
 								image={blogImage.gatsbyImageData}
 								alt={blogImage.description}
 							/>

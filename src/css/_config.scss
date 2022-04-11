@@ -17,7 +17,7 @@ $blue: #57cbff;
 	transition: all 0.5s ease-in-out;
 }
 @mixin media-sm {
-	@media screen and (min-width: 320px) {
+	@media screen and (max-width: 768px) {
 		@content;
 	}
 }
