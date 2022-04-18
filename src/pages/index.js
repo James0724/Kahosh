@@ -12,7 +12,14 @@ const index = () => {
 	return (
 		<Layout>
 			<div className="main">
-				<section id="home" className="hero-section">
+				<section
+					id="home"
+					className="hero-section"
+					data-sal-duration="1000"
+					data-sal="slide-up"
+					data-sal-delay="300"
+					data-sal-easing="ease-out-bounce"
+				>
 					<div className="intro">
 						<h3>Hi there, my name is</h3>
 					</div>
@@ -48,7 +55,14 @@ const index = () => {
 						</AnchorLink>
 					</button>
 				</section>
-				<section id="about" className="about-section">
+				<section
+					id="about"
+					className="about-section"
+					data-sal-duration="1000"
+					data-sal="slide-up"
+					data-sal-delay="300"
+					data-sal-easing="ease-out-bounce"
+				>
 					<h2 class="numbered-heading">About Me</h2>
 					<div className="about-container">
 						<div class="about__text">
@@ -118,7 +132,14 @@ const index = () => {
 						</div>
 					</div>
 				</section>
-				<section id="projects" className="project-section">
+				<section
+					id="projects"
+					className="project-section"
+					data-sal-duration="1000"
+					data-sal="slide-up"
+					data-sal-delay="300"
+					data-sal-easing="ease-out-bounce"
+				>
 					<h2 class="numbered-heading">Some Things I’ve Built</h2>
 
 					<ProjectList />
@@ -206,7 +227,14 @@ const index = () => {
 							</div>
 						</li> */}
 				</section>
-				<section id="contact" className="contact-section">
+				<section
+					id="contact"
+					className="contact-section"
+					data-sal-duration="1000"
+					data-sal="slide-up"
+					data-sal-delay="300"
+					data-sal-easing="ease-out-bounce"
+				>
 					<h2 class="numbered-heading">What next?</h2>
 					<h2 class="title">Get In Touch</h2>
 					<p>

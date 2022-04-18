@@ -40,13 +40,13 @@ button {
 	background-color: transparent;
 	border: 2px solid $green;
 	border-radius: 5px;
-	padding: 18px 20px;
+	padding: 15px 18px;
 	font-family: "Roboto Mono", monospace;
 	text-decoration: none;
-	line-height: 1;
+	line-height: 0.5;
 	width: max-content;
 	font-weight: 300;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	cursor: pointer;
 	& a {
 		color: $green !important;
@@ -61,7 +61,7 @@ button {
 }
 
 section {
-	padding: 25px 0;
+	padding: 15px 0;
 	margin: 0px auto;
 }
 /**********************************************BLOG*******************************************/
@@ -81,7 +81,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	text-decoration: none;
-	padding: 30px;
+
 }
 .post-image {
 	&::after {
@@ -106,13 +106,14 @@ section {
 	width: 100%;
 }
 .post-list-content {
-	padding: 30px;
+	padding: 20px;
+	@include font-size(12px);
 	.entry-meta {
 		color: $green;
 		list-style: none;
 		display: flex;
 		padding: 0;
-		@include font-size(14px);
+		@include font-size(10px);
 		li {
 			padding-right: 20px;
 		}

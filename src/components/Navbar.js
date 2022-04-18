@@ -97,7 +97,7 @@ const Navbar = () => {
 							</AnchorLink>
 						</li>
 
-						<button class={`${isMenuOpen ? "open" : ""}`}>Resume</button>
+						<button class={`navbtn ${isMenuOpen ? "open" : ""}`}>Resume</button>
 					</ul>
 				</nav>
 			</div>

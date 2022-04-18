@@ -7,6 +7,23 @@ module.exports = {
 	},
 	plugins: [
 		{
+			resolve: "gatsby-plugin-crisp-chat",
+			options: {
+				websiteId: "CRISP_WEBSITE_ID",
+				enableDuringDevelop: false, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+				defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
+				enableImprovedAccessibility: false, // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
+			},
+		},
+		{
+			resolve: `gatsby-plugin-scroll-reveal`,
+			options: {
+				threshold: 0.01, // Percentage of an element's area that needs to be visible to launch animation
+				once: true, // Defines if animation needs to be launched once
+				disable: false, // Flag for disabling animations
+			},
+		},
+		{
 			resolve: `gatsby-plugin-google-fonts`,
 			options: {
 				fonts: [
