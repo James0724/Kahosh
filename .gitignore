@@ -20,7 +20,8 @@ node_modules/
 # Environments
 .env
 config.env
-env.development
+.env.development
+.env.production
 .venv
 env/
 venv/

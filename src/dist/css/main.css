@@ -305,7 +305,7 @@
   margin-bottom: 10px;
   padding-left: 20px;
   font-family: "Roboto Mono", monospace;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 .about-section .about__text .skills-list li::before {
   content: "▹";
@@ -425,7 +425,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin: 10px 0px 40px;
   width: 100%;
   white-space: nowrap;
   color: #ccd6f6;
@@ -452,13 +451,14 @@
 }
 
 .contact-section {
-  text-align: center;
+  text-align: left;
 }
 .contact-section .numbered-heading::before {
   counter-increment: section 3;
   content: "0" counter(section) ".";
 }
 .contact-section .title {
+  text-align: center;
   color: #ccd6f6;
   font-size: calc(1.35rem + 1.2vw);
 }
@@ -471,7 +471,10 @@
   font-family: "Roboto Mono", monospace;
   font-size: 0.875rem;
 }
-.contact-section button a {
+.contact-section .contact__btn {
+  text-align: center;
+}
+.contact-section .contact__btn button a {
   text-decoration: none;
   color: #64ffda;
 }
@@ -609,10 +612,11 @@
 
   .about-section .about__text {
     max-width: 100%;
+    padding: 0;
   }
   .about-section .about__pic {
-    max-width: 90%;
-    padding: 0;
+    max-width: 80%;
+    padding: 30px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -649,7 +653,7 @@
     overflow: hidden;
   }
 
-  .navbar {
+  s .navbar {
     top: -100px;
     height: 60px;
   }
@@ -705,7 +709,7 @@
   }
 
   .about-section {
-    max-width: 900px;
+    max-width: 1000px;
   }
 
   .project-section {
@@ -715,6 +719,7 @@
   .contact-section {
     max-width: 600px;
     margin: 0px auto 100px;
+    text-align: center;
   }
 
   .hero-section {

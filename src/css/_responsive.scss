@@ -7,10 +7,11 @@
 	.about-section {
 		.about__text {
 			max-width: 100%;
+			padding: 0;
 		}
 		.about__pic {
-			max-width: 90%;
-			padding: 0;
+			max-width: 80%;
+			padding: 30px;
 			margin: 0;
 			margin-left: auto;
 			margin-right: auto;
@@ -18,12 +19,15 @@
 	}
 }
 @include media-md {
+
 	//Buttons
 	button {
 	padding: 18px 20px;
 	line-height: 1;
 	letter-spacing: 2px;
 	}
+
+
 	//Blog-section
 	.blog-item {
 		flex-direction: row !important;
@@ -47,6 +51,8 @@
 		height: 500px;
 		overflow: hidden;
 	}
+
+	s
 	//MENU
 	.navbar {
 		top: -100px;
@@ -98,7 +104,7 @@
 		padding: 0 150px;
 	}
 	.about-section {
-		max-width: 900px;
+		max-width: 1000px;
 	}
 	.project-section {
 		max-width: 1000px;
@@ -106,6 +112,7 @@
 	.contact-section {
 		max-width: 600px;
 		margin: 0px auto 100px;
+		text-align: center;
 	}
 	.hero-section {
 		max-width: 1000px;

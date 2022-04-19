@@ -114,9 +114,9 @@ const index = () => {
 
 							<ul class="skills-list">
 								<li>JavaScript (ES6+)</li>
-								<li>TypeScript</li>
+								<li>Django</li>
 								<li>React</li>
-								<li>Eleventy</li>
+								<li>Boostrap</li>
 								<li>Node.js</li>
 								<li>WordPress</li>
 							</ul>
@@ -243,16 +243,18 @@ const index = () => {
 						amazing together and to hear from you whether it is Dropping a line
 						to say good day or ask for my resume.
 					</p>
-					<button>
-						<a
-							class="email-link"
-							href="mailto:jameskahoro07@gmail.com"
-							rel="noopener noreferrer"
-							target="_blank"
-						>
-							Say Hello
-						</a>
-					</button>
+					<div className="contact__btn">
+						<button>
+							<a
+								class="email-link"
+								href="mailto:jameskahoro07@gmail.com"
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								Say Hello
+							</a>
+						</button>
+					</div>
 				</section>
 				<Allbloglist />
 				{/* <div class="hero__social-icons">

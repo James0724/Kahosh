@@ -121,7 +121,7 @@
 				margin-bottom: 10px;
 				padding-left: 20px;
 				font-family: "Roboto Mono", monospace;
-				@include font-size(14px);
+				@include font-size(12px);
 				&::before {
 					content: "▹";
 					position: absolute;
@@ -250,12 +250,11 @@
 	}
 }
 
-//*****************HEADING*******************888
+//*****************HEADING*******************//
 .numbered-heading {
 	display: flex;
 	align-items: center;
 	position: relative;
-	margin: 10px 0px 40px;
 	width: 100%;
 	white-space: nowrap;
 	color: $lightest-slate;
@@ -282,7 +281,7 @@
 }
 //*****************************CONTACT SECTION*****************************
 .contact-section {
-	text-align: center;
+	text-align: left;
 	& .numbered-heading {
 		&::before {
 			counter-increment: section 3;
@@ -290,6 +289,7 @@
 		}
 	}
 	& .title {
+		text-align: center;
 		color: $lightest-slate;
 		@include font-size(36px);
 	}
@@ -297,10 +297,13 @@
 		font-family: "Roboto Mono", monospace;
 		@include font-size(14px);
 	}
-	& button {
-		a {
-			text-decoration: none;
-			color: $green;
+	& .contact__btn {
+		text-align: center;
+		button {
+			a {
+				text-decoration: none;
+				color: $green;
+			}
 		}
 	}
 }
